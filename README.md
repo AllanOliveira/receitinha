@@ -1,2 +1,1 @@
-# hello
-# thamy
+# receitinha-api
