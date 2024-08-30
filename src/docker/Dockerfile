@@ -31,7 +31,7 @@ WORKDIR /opt/receitinha-api
 ADD /target/${JAR_FILE} /opt/receitinha-api/receitinha-api.jar
 COPY --from=build /jdk-minimal /opt/jdk/
 
-ADD ./entrypoint.sh /opt/receitinha-api/entrypoint.sh
+ADD /src/docker/entrypoint.sh /opt/receitinha-api/entrypoint.sh
 
 RUN chmod +x /opt/receitinha-api/entrypoint.sh
 

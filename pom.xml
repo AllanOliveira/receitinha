@@ -63,7 +63,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<dockerfile>Dockerfile</dockerfile>
+					<dockerfile>src/docker/Dockerfile</dockerfile>
 					<repository>receitinha-api</repository>
 					<tag>${project.version}</tag>
 					<buildArgs>

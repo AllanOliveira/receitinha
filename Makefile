@@ -1,4 +1,4 @@
-RECEITINHA_VERSION=latest
+RECEITINHA_VERSION="$(shell ./mvnw help:evaluate -Dexpression=project.version -q -DforceStdout | grep -v Warning)"
 
 build:
 	@./mvnw clean package
