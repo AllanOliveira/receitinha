@@ -1,0 +1,46 @@
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+# Maven
+target/
+target/**
+release.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Application
+src/main/resources/application.properties
+
+# Jenkins
+jenkins.env
+
+#asdf
+**/.tool-versions
+
+#Avro
+src/main/avro/
+src/main/resources/avro/

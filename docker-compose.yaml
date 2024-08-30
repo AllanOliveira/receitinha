@@ -1,0 +1,20 @@
+version: '3.7'
+
+networks:
+  default:
+    external: true
+    name: development
+
+services:
+  api:
+    container_name: receitinha-api
+    image: receitinha-api:0.0.1-SNAPSHOT
+    environment:
+      - SERVER_PORT=8090
+      - RECEITINHA_API_JAVA_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=0.0.0.0:5010
+      - SPRING_CONFIG_LOCATION=file:///opt/receitinha-api/config/application.properties
+    ports:
+      - "8090:8090"
+      - "5010:5010"
+    volumes:
+      - ${PWD}/src/main/resources/application.properties:/opt/receitinha-api/config/application.properties
