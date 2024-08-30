@@ -7,7 +7,7 @@ start:
 	@echo "Starting containers..."
 	RECEITINHA_VERSION=$(RECEITINHA_VERSION) docker-compose up -d
 
-all: build start
+all: stop build start
 
 stop:
 	docker compose stop
