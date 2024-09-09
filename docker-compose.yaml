@@ -18,3 +18,11 @@ services:
       - "5010:5010"
     volumes:
       - ${PWD}/src/main/resources/application.properties:/opt/receitinha-api/config/application.properties
+  prometheus:
+    container_name: prometheus-server
+    image: prom/prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ${PWD}/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ${PWD}/prometheus/data:/prometheus
