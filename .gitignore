@@ -44,3 +44,5 @@ jenkins.env
 #Avro
 src/main/avro/
 src/main/resources/avro/
+
+prometheus/data/
